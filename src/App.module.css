@@ -24,7 +24,13 @@
 
 @media (min-width: 992px) {
   .table {
-    grid-template-columns: repeat(17, auto);
+    grid-template-columns: repeat(16, auto);
+  }
+}
+
+@media (min-width: 1200px) {
+  .table {
+    grid-template-columns: repeat(18, auto);
   }
 }
 
@@ -55,15 +61,15 @@
 
 @media (min-width: 992px) {
   .element {
-    height: calc(100vw / 17);
-    width: calc(100vw / 17);
+    height: calc(100vw / 16);
+    width: calc(100vw / 16);
   }
 }
 
 @media (min-width: 1200px) {
   .element {
-    height: calc(90vw / 17);
-    width: calc(90vw / 17);
+    height: calc(90vw / 18);
+    width: calc(90vw / 18);
   }
 }
 
@@ -79,4 +85,84 @@
 
 .name {
   font-size: 0.6rem;
+}
+
+@media (min-width: 1200px) {
+  [data-element="2"] {
+    grid-column-start: 18;
+  }
+
+  [data-element="5"] {
+    grid-column-start: 13;
+  }
+
+  [data-element="13"] {
+    grid-column-start: 13;
+  }
+
+  [data-element="57"] {
+    grid-column-start: 3;
+  }
+
+  [data-element="89"] {
+    grid-column-start: 3;
+  }
+
+  [data-element="119"] {
+    grid-column-start: 18;
+  }
+}
+
+.lanthanoids {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-column-start: 3;
+  grid-row-start: 6;
+  background-color: #dc4f95;
+  height: calc(100vw / 4);
+  width: calc(100vw / 4);
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+.actinides {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-column-start: 3;
+  grid-row-start: 7;
+  background-color: #dcc2cc;
+  height: calc(100vw / 4);
+  width: calc(100vw / 4);
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+@media (min-width: 576px) {
+  .lanthanoids,
+  .actinides {
+    height: calc(100vw / 8);
+    width: calc(100vw / 8);
+  }
+}
+
+@media (min-width: 768px) {
+  .lanthanoids,
+  .actinides {
+    height: calc(100vw / 12);
+    width: calc(100vw / 12);
+  }
+}
+
+@media (min-width: 992px) {
+  .lanthanoids,
+  .actinides {
+    height: calc(100vw / 16);
+    width: calc(100vw / 16);
+  }
+}
+
+@media (min-width: 1200px) {
+  .lanthanoids,
+  .actinides {
+    height: calc(90vw / 18);
+    width: calc(90vw / 18);
+  }
 }
