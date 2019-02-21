@@ -41,25 +41,35 @@
 }
 
 .element {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 2px;
+  padding: 4px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.number {
-  font-size: 0.6rem;
-  align-self: flex-start;
-  justify-self: flex-start;
-}
-
-.symbol {
-  font-size: 1rem;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
 }
 
 .name {
+  font-size: 0.6rem;
+}
+
+.symbol {
+  font-size: 1.2rem;
+  font-weight: bold;
+  align-self: center;
+  text-transform: capitalize;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.atomicMass {
+  font-size: 0.6rem;
+}
+
+.number {
   font-size: 0.6rem;
 }
 
@@ -238,25 +248,31 @@
 }
 
 .lanthanoids {
-  border: 1px solid rgba(0, 0, 0, 0.8);
   display: none;
   background-color: #dc4f95;
   color: #fff;
   font-size: 0.6rem;
+  padding: 4px;
+  text-transform: uppercase;
+  word-break: break-all;
 }
 
 .actinides {
-  border: 1px solid rgba(0, 0, 0, 0.8);
   display: none;
   background-color: #dcc2cc;
   color: #fff;
   font-size: 0.6rem;
+  padding: 4px;
+  text-transform: uppercase;
+  word-break: break-all;
 }
 
 @media (min-width: 1200px) {
   .lanthanoids,
   .actinides {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: calc(86.4vw / 18);
     width: calc(86.4vw / 18);
   }
@@ -268,4 +284,47 @@
     grid-column-start: 3;
     grid-row-start: 7;
   }
+}
+
+.halogenCategory {
+  background-color: #f9dcba;
+}
+
+.nobleGasCategory {
+  background-color: #db3742;
+}
+
+.alkaliMetalCategory {
+  background-color: #439760;
+}
+
+.alkalineEarthMetalCategory {
+  background-color: #2565ab;
+}
+
+.metalloidCategory {
+  background-color: #56bccd;
+}
+
+.otherNonmetalCategory {
+  background-color: #c9ddaa;
+}
+
+.postTransitionMetalCategory {
+  background-color: #f8cb46;
+}
+.lanthanideCategory {
+  background-color: #dc4f95;
+}
+
+.actinidesCategory {
+  background-color: #dcc2cc;
+}
+
+.transitionMetalCategory {
+  background-color: #4c348d;
+}
+
+.unknownCategory {
+  background-color: #aecb59;
 }
