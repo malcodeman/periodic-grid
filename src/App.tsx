@@ -35,8 +35,8 @@ class App extends Component<{}, {}> {
   render() {
     return (
       <div className={style.container}>
-        <p>Periodic table</p>
-        <div className={style.table}>
+        <p>Periodic grid</p>
+        <div className={style.grid}>
           {elements.map(element => {
             return (
               <div

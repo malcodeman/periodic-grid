@@ -5,35 +5,35 @@
   }
 }
 
-.table {
+.grid {
   display: grid;
   grid-template-columns: repeat(4, calc(100vw / 4));
   grid-auto-rows: calc(100vw / 4);
 }
 
 @media (min-width: 576px) {
-  .table {
+  .grid {
     grid-template-columns: repeat(8, calc(100vw / 8));
     grid-auto-rows: calc(100vw / 8);
   }
 }
 
 @media (min-width: 768px) {
-  .table {
+  .grid {
     grid-template-columns: repeat(12, calc(100vw / 12));
     grid-auto-rows: calc(100vw / 12);
   }
 }
 
 @media (min-width: 992px) {
-  .table {
+  .grid {
     grid-template-columns: repeat(16, calc(100vw / 16));
     grid-auto-rows: calc(100vw / 16);
   }
 }
 
 @media (min-width: 1200px) {
-  .table {
+  .grid {
     grid-template-columns: repeat(18, calc(86.4vw / 18));
     grid-template-rows: repeat(10, calc(86.4vw / 18));
     grid-gap: 0.2vw;
