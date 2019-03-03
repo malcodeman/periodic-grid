@@ -1,7 +1,7 @@
 # [Periodic Grid](http://periodic-grid.surge.sh) ⚗️
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/malcodeman//blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/malcodeman/periodic-table/blob/master/LICENSE)
 
 Utilizes css grid, css modules, viewport units and typescript.
 
