@@ -5,6 +5,8 @@
 
 Utilizes css grid, css modules, viewport units and typescript.
 
+![Screenshot](docs/images/screenshot.png)
+
 ## Usage
 
 ```
