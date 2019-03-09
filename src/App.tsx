@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import style from "./App.module.css";
 import elements from "./data/elements.json";
+import Footer from "./components/footer/Footer";
 
 class App extends Component<{}, {}> {
   getStyle = (category: string): string => {
@@ -34,8 +35,7 @@ class App extends Component<{}, {}> {
   };
   render() {
     return (
-      <div className={style.container}>
-        <p>Periodic grid</p>
+      <div className={style.app}>
         <div className={style.grid}>
           {elements.map(element => {
             return (
@@ -58,6 +58,7 @@ class App extends Component<{}, {}> {
           <div className={style.lanthanoids}>lanthanoids</div>
           <div className={style.actinides}>actinides</div>
         </div>
+        <Footer />
       </div>
     );
   }
