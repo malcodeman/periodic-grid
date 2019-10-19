@@ -2,7 +2,7 @@ import React from "react";
 
 import style from "./footer.module.css";
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className={style.footer}>
       Made by{" "}
@@ -28,6 +28,6 @@ const Footer = () => {
       </a>
     </footer>
   );
-};
+}
 
 export default Footer;

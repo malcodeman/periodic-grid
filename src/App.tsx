@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
 import style from "./App.module.css";
 import elements from "./data/elements.json";
 import Footer from "./components/footer/Footer";
 
-class App extends Component<{}, {}> {
-  getStyle = (category: string): string => {
+function App() {
+  function getStyle(category: string): string {
     switch (category) {
       case "diatomic nonmetal":
         return `${style.element} ${style.halogenCategory}`;
@@ -32,36 +32,35 @@ class App extends Component<{}, {}> {
       default:
         return style.element;
     }
-  };
-  render() {
-    return (
-      <div className={style.app}>
-        <div className={style.grid}>
-          {elements.map(element => {
-            return (
-              <div
-                className={this.getStyle(element.category)}
-                data-element={element.number}
-                key={element.number}
-              >
-                <span className={style.name}>{element.name}</span>
-                <span className={style.symbol}>{element.symbol}</span>
-                <footer className={style.footer}>
-                  <span className={style.atomicMass}>
-                    {element.atomic_mass.toLocaleString()}
-                  </span>
-                  <span className={style.number}>{element.number}</span>
-                </footer>
-              </div>
-            );
-          })}
-          <div className={style.lanthanoids}>lanthanoids</div>
-          <div className={style.actinides}>actinides</div>
-        </div>
-        <Footer />
-      </div>
-    );
   }
+
+  return (
+    <div className={style.app}>
+      <div className={style.grid}>
+        {elements.map(element => {
+          return (
+            <div
+              className={getStyle(element.category)}
+              data-element={element.number}
+              key={element.number}
+            >
+              <span className={style.name}>{element.name}</span>
+              <span className={style.symbol}>{element.symbol}</span>
+              <footer className={style.footer}>
+                <span className={style.atomicMass}>
+                  {element.atomic_mass.toLocaleString()}
+                </span>
+                <span className={style.number}>{element.number}</span>
+              </footer>
+            </div>
+          );
+        })}
+        <div className={style.lanthanoids}>lanthanoids</div>
+        <div className={style.actinides}>actinides</div>
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
