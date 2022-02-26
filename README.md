@@ -1,4 +1,4 @@
-# [Periodic Grid](http://periodic-grid.surge.sh) ⚗️
+# [Periodic Grid](https://periodic-grid.surge.sh) ⚗️
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/malcodeman/periodic-table/blob/master/LICENSE)
@@ -10,17 +10,11 @@ Utilizes css grid, css modules, viewport units and typescript.
 ## Usage
 
 ```
-yarn install
-yarn start
+npm install
+npm start
 ```
 
 ## Documentation
-
-If you wish to deploy to [surge.sh](https://surge.sh) just edit `domain` variable in package.json to your liking and run `yarn deploy` command.
-
-```
-"domain": "periodic-grid.surge.sh"
-```
 
 Element JSON example
 
